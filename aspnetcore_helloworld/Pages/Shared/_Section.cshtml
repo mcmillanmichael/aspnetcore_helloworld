@@ -1,0 +1,19 @@
+﻿@using mike.models
+@model Section
+
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title">@Model.Header</h3>
+        <p class="card-text">@Model.Content</p>
+    </div>
+</div>
+
+@if (Model.Subsections != null)
+{
+    <div class="card-columns">
+        @foreach (var section in Model.Subsections)
+        {
+            <partial name="_Section" model="section" />
+        }
+    </div>
+}

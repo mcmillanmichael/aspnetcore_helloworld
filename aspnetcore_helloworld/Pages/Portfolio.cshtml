@@ -1,0 +1,129 @@
+﻿@page
+@model PortfolioModel
+@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@*<p>Use this page to detail your site's Portfolio.</p>*@
+
+<!-- Search portfolio sections -->
+@*<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control"
+                   asp-for="SearchTerm" />
+            <span class="input-group-append">
+                <button class="btn btn-secondary">
+                    <i class="fas fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>*@
+
+<div class="card-deck">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Summary</h3>
+            <div class="card-text">
+                <p>A Senior Software Engineer with over 10 years’  hands-on experience developing reliable, high-performing, n-tier applications.  Having mostly used the Microsoft technology stack in the aerospace sector, but also has hands on experience with Java.</p>
+                <p>I’m keen to keep learning new tech, such as Angular and dotnet-core, and to continuously improve upon my existing skill-set.</p>
+                <p>I’m open-minded and willing to be led and learn from others, whilst also able to mentor and pass on my hard-won knowledge.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Skills Highlight</h3>
+            <p class="card-text">
+                Proficient at:
+                <ul>
+                    <li>C#, .NET</li>
+                    <li>Agile/Scrum</li>
+                    <li>Entity Framework, Linq</li>
+                    <li>SQL-Server, TSQL</li>
+                    <li>WPF/XAML with MVVM pattern</li>
+                    <li>WCF</li>
+                    <li>Powershell</li>
+                </ul>
+                Currently researching:
+                <ul>
+                    <li>Asp-Net-Core with Razor-Pages</li>
+                    <li>Angular</li>
+                    <li>Python</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title">Experience</h3>
+        <div class="card-body">
+            <h5 class="card-title">Ultra Electronics Airport Systems</h5>
+            <p class="card-subtitle">Manchester | Software Engineer 1 | Software Engineer 2 | Senior Software Engineer | July 2011 - Current</p>
+            <div class="card-text">
+                <p>I began work here as a Software Engineer 1 and already had knowledge of C# and the agile/scrum process.  So on the job I improved on these, and also quickly got to grips with WPF and Silverlight, Windows Workflow, Entity Framework, WCF, as well a lot more T-SQL.</p>
+                <p>I worked on the Silverlight front-end utilising Telerik’s toolkit, producing highly configurable data-grids that the customer could configure themselves.  The loading mechanism for the data-grids required work to improve performance, so a fair amount of time was spent on this, some of which was done at the Microsoft scalability labs.</p>
+                <p>Assisted in producing a Workflow designer in WPF, that allowed the client to create their own complex business rules.  This allowed us to spend more time developing product features and less time labouring over client-specific business logic.</p>
+                <p>Once the product had most of the functionality in place, we saw that overall system performance had become an issue.  I reviewed the indexes in our sql-server database, and using sql-profiler and the query execution plans, resolved some performance issues.  I then used a few memory and performance profilers (namely redgate and perfview) to hunt for memory, and cpu performance issues in both the client and server applications.  With this work complete, we went from being able to have only a handful of concurrent users to being able to support thousands.  This product is now live at several airports, used by hundreds of users, with several more airports on the roadmap.</p>
+                <p>During my time here, we were allowed 20% of our time to conduct our own research, and to keep up-to-date with modern technology.  I decided to use most of this time as R&D into different tech stacks that would be useful for a new product that was on the roadmap, such as Angular, Python, and Machine Learning, and sharing my findings in the development wide “Chapter Meetings”.  I’m not an expert in these topics by any means, but I find them interesting, and would love to keep learning!</p>
+                <p>Over my first three years at Ultra; in recognition of my rapid growth, value to the company, and commitment to see the product succeed; I was awarded a promotion to Software Engineer 2 and then not long after another promotion up to Senior Software Engineer.  Here are some examples of why I was promoted to senior:</p>
+                <ul>
+                    <li>Built a reputation for being approachable and helpful, so that I was often the go-to for developers asking for assistance.</li>
+                    <li>Conducting code reviews in a professional, constructive manner, looking out for performance impacts and change in behaviour, ensuring good code quality (SOLID, DRY), and querying what kind of testing had been conducted.</li>
+                    <li>Not being phased by taking on large pieces of work, including a system-wide database and ORM schema refactoring work</li>
+                    <li>Mentoring more junior members of the team, utilising pair programming, code reviews, and sharing my knowledge of certain areas of the product.</li>
+                    <li>Getting involved in the yearly graduate recruitment program by reviewing CV’s, conducting both telephone and face-to-face interviews, reviewing presentations and group exercises, and providing feedback to candidates.</li>
+                </ul>
+                <p>Since then, I’ve also taken on the role of data-chapter lead, which involves encouraging a group of engineers to start thinking about machine-learning from an R&D perspective, providing training opportunities for them, arranging hackathons and workshops where we can explore some of our ideas.</p>
+                <p>I’ve also been encouraging the team to start thinking about code craftsmanship by arranging regular code-katas (<a href="http://codekata.com">http://codekata.com</a>) to help us refine our approach to software engineering.  During which, we’ve learnt how to better apply TDD, incremental code changes, small commits, and to properly think about writing SOLID, DRY code.  This has been invaluable experience, as it has provided the team with a forum to debate the most basic things</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Esay Solutions Ltd</h5>
+            <p class="card-subtitle">Manchester | Software Developer | June 2008 to July 2011</p>
+            <div class="card-text">
+                <p>Here, I was a software developer for both mobile and server side components for Esay's WorkMobile project (<a href="http://www.workmobileforms.com">http://www.workmobileforms.com</a>).</p>
+                <p>This role involved using C#, Java for Android and blackberry, Windows-Mobile, web-services, sql-server, and agile scrum. Esay provided training to help me fulfil my role, including offsite sql-server and WCF courses, and learning to program for the Android platform.</p>
+                <p>Here I quickly proved my worth, and my advice was often sought to help work through complex issues.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title">Education</h3>
+
+        <div class="card-body">
+            <h5 class="card-title">Salford University</h5>
+            <p class="card-text">BSc (Hons) Computer Science | 2:1 | Sep 2005 to May 2008</p>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Tameside College</h5>
+            <p class="card-text">BTEC National Diploma in Computing | DDM | Sep 2003 to Jul 2005</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title">Extracurricular / Hobbies</h3>
+        <div class="card-text">
+            <p>I’m passionate about learning new skills, and improving upon those I already have.  Currently, I am learning aspnet core, dotnet core, python and machine learning in my free time.  I attended the M-Cubed data-science conference in 2018 to further my exposure to ML.</p>
+            <p>I’m also interested in DevOps/CI/CD, and so I’ve spent some time looking into Docker / Kubernetes (minikube) / Jenkins / Ansible.  Whilst this isn’t my area of expertise, I am interested in learning more, and plan on spending more time in this domain.</p>
+            <p>I try to keep up - to - date by viewing the Thoughtworks’ Tech - Radar, and generally following Martin Fowler and reading his books; such as Continuous Delivery, and Accelerate.  I’m also making my way through the new C# in Depth 4th Edition by the legendary Jon Skeet, and have the older CLR via C# on my backlog.  I also use tech blog aggregators, such as The Morning Brew, by Chris Alcock.</p>
+            <p>I enjoy playing foosball, board games, and rocket league, I also enjoy climbing, running, yoga, and spending time with my family.</p>
+        </div>
+    </div>
+</div>
+<!-- Display section header and content -->
+        @*@foreach (var section in Model.Sections)
+        {
+<partial name="_Section" model="section" />
+        }*@

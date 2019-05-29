@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Mike McMillan";
+}
+
+<div class="row">
+    <div class="col text-center">
+        <img class="rounded-circle img-fluid profile-img"
+             src="~/img/mikemcmillan.jpg"
+             alt="Mike McMillan" />
+        <h1 class="display-4">Mike McMillan</h1>
+        <p>Senior Software Engineer of @Model.DevTimeYears Years</p>
+        <p>Manchester, UK</p>
+
+        <div>
+            <a href="mailto:mike@mikemcmillan.dev">
+                <i class="far fa-envelope img-fluid"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/michaelpmcmillan/">
+                <i class="fab fa-linkedin img-fluid"></i>
+            </a>
+        </div>
+    </div>
+</div>
