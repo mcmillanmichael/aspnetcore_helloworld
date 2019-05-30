@@ -7,10 +7,11 @@
 <div class="row">
     <div class="col text-center">
         <img class="rounded-circle img-fluid profile-img"
-             src="~/img/mikemcmillan.jpg"
+             src="@Model.ProfileImageSource"
              alt="Mike McMillan" />
+
         <h1 class="display-4">Mike McMillan</h1>
-        <p>Senior Software Engineer of @Model.DevTimeYears Years</p>
+        <p>Senior Software Engineer (@Model.DevTimeYears Years, @Model.DevTimeMonths Months)</p>
         <p>Manchester, UK</p>
 
         <div>
