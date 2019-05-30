@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mike.data", "mike.data\mike
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mike.models", "mike.models\mike.models.csproj", "{3EDDDAB9-1702-4420-83DC-D5A127042E08}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A201164-06FF-43EB-BD5C-5E9CD1449065}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

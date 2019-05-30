@@ -1,7 +1,7 @@
 ﻿@page
 @model PortfolioModel
 @{
-    ViewData["Title"] = "Portfolio";
+    ViewData["Title"] = "Mike McMillan";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -38,24 +38,24 @@
           <div class="card col-sm">
               <div class="card-body">
                   <h3 class="card-title">Skills Highlight</h3>
-                  <p class="card-text">
-                      Proficient at:
+                  <div class="card-text">
+                      Proficient:
                       <ul>
-                          <li>C#, .NET</li>
+                          <li>C# .NET</li>
                           <li>Agile/Scrum</li>
                           <li>Entity Framework, Linq</li>
-                          <li>SQL-Server, TSQL</li>
+                          <li>SQL Server, TSQL</li>
                           <li>WPF/XAML with MVVM pattern</li>
                           <li>WCF</li>
                           <li>Powershell</li>
                       </ul>
-                      Currently researching:
+                      Researching:
                       <ul>
-                          <li>Asp-Net-Core with Razor-Pages</li>
-                          <li>Angular</li>
-                          <li>Python</li>
+                          <li>asp.net core with razor pages</li>
+                          <li>angular</li>
+                          <li>python</li>
                       </ul>
-                  </p>
+                  </div>
               </div>
           </div>
       </div>
@@ -65,8 +65,10 @@
               <div class="card-body">
                   <h3 class="card-title">Experience</h3>
                   <div class="card-body">
-                      <h5 class="card-title">Ultra Electronics Airport Systems</h5>
-                      <p class="card-subtitle">Manchester | Software Engineer 1 | Software Engineer 2 | Senior Software Engineer | July 2011 - Current</p>
+                      <h4 class="card-title">Ultra Electronics Airport Systems <small>- @Model.TotalUltraTime</small></h4>
+                      <h5 class="card-text">Software Engineer 1 <small>- 2011 to 2013</small></h5>
+                      <h5 class="card-text">Software Engineer 2 <small>- 2013 - 2014</small></h5>
+                      <h5 class="card-text">Senior Software Engineer <small>- 2014 - Current</small></h5>
                       <div class="card-text">
                           <p>I began work here as a Software Engineer 1 and already had knowledge of C# and the agile/scrum process.  So on the job I improved on these, and also quickly got to grips with WPF and Silverlight, Windows Workflow, Entity Framework, WCF, as well a lot more T-SQL.</p>
                           <p>I worked on the Silverlight front-end utilising Telerik’s toolkit, producing highly configurable data-grids that the customer could configure themselves.  The loading mechanism for the data-grids required work to improve performance, so a fair amount of time was spent on this, some of which was done at the Microsoft scalability labs.</p>
@@ -86,8 +88,8 @@
                       </div>
                   </div>
                   <div class="card-body">
-                      <h5 class="card-title">Esay Solutions Ltd</h5>
-                      <p class="card-subtitle">Manchester | Software Developer | June 2008 to July 2011</p>
+                      <h4 class="card-title">Esay Solutions Ltd <small>- 3 Years</small></h4>
+                      <h5 class="card-text">Software Developer <small>- 2008 to 2011</small></h5>
                       <div class="card-text">
                           <p>Here, I was a software developer for both mobile and server side components for Esay's WorkMobile project (<a href="http://www.workmobileforms.com">http://www.workmobileforms.com</a>).</p>
                           <p>This role involved using C#, Java for Android and blackberry, Windows-Mobile, web-services, sql-server, and agile scrum. Esay provided training to help me fulfil my role, including offsite sql-server and WCF courses, and learning to program for the Android platform.</p>
@@ -104,12 +106,14 @@
                   <h3 class="card-title">Education</h3>
 
                   <div class="card-body">
-                      <h5 class="card-title">Salford University</h5>
-                      <p class="card-text">BSc (Hons) Computer Science | 2:1 | Sep 2005 to May 2008</p>
+                      <h4 class="card-title">BSc (Hons) Computer Science - 2:1</h4>
+                      <p class="card-text">Salford University | Sep 2005 to May 2008</p>
+                      <p class="card-text">Java, C#, SQL, math, data structures, design patterns, prolog, cyber security, etc.</p>
                   </div>
                   <div class="card-body">
-                      <h5 class="card-title">Tameside College</h5>
-                      <p class="card-text">BTEC National Diploma in Computing | DDM | Sep 2003 to Jul 2005</p>
+                      <h4 class="card-title">BTEC National Diploma in Computing - DDM</h4>
+                      <p class="card-text">Tameside College | Sep 2003 to Jul 2005</p>
+                      <p class="card-text">C, VB6, math, binary math, etc.</p>
                   </div>
               </div>
           </div>
@@ -122,7 +126,7 @@
                   <div class="card-text">
                       <p>I’m passionate about learning new skills, and improving upon those I already have.  Currently, I am learning aspnet core, dotnet core, python and machine learning in my free time.  I attended the M-Cubed data-science conference in 2018 to further my exposure to ML.</p>
                       <p>I’m also interested in DevOps/CI/CD, and so I’ve spent some time looking into Docker / Kubernetes (minikube) / Jenkins / Ansible.  Whilst this isn’t my area of expertise, I am interested in learning more, and plan on spending more time in this domain.</p>
-                      <p>I try to keep up - to - date by viewing the Thoughtworks’ Tech - Radar, and generally following Martin Fowler and reading his books; such as Continuous Delivery, and Accelerate.  I’m also making my way through the new C# in Depth 4th Edition by the legendary Jon Skeet, and have the older CLR via C# on my backlog.  I also use tech blog aggregators, such as The Morning Brew, by Chris Alcock.</p>
+                      <p>I try to keep up - to - date by viewing the Thoughtworks’ Tech - Radar, and generally following Martin Fowler and reading his books; such as Continuous Delivery, and Accelerate.  I’m also making my way through the new C# in Depth 4th Edition by the legendary Jon Skeet, and have CLR via C# on my backlog.  I also use tech blog aggregators, such as <a href="http://blog.cwa.me.uk/">The Morning Brew, by Chris Alcock</a>.</p>
                       <p>I enjoy playing foosball, board games, and rocket league, I also enjoy climbing, running, yoga, and spending time with my family.</p>
                   </div>
               </div>
