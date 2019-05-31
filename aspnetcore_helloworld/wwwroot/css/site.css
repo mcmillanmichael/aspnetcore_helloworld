@@ -2,14 +2,20 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 .button-bar > a {
-    margin-right: 5px;
+    margin-right: 0.25rem;
 }
 .button-bar > a:hover {
     text-decoration: none;
 }
+h4.card-title {
+    text-decoration: underline;
+}
 
 .card {
-    margin:10px;
+    margin: 0.5rem;
+}
+.card-body {
+    padding: 0.75rem;
 }
 
 .profile-img {
