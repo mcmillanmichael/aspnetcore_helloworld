@@ -1,6 +1,13 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.button-bar > a {
+    margin-right: 5px;
+}
+.button-bar > a:hover {
+    text-decoration: none;
+}
+
 .card {
     margin:10px;
 }
